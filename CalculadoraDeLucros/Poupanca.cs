@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace CalculadoraDeLucros
 {
-    public class Poupanca
+    public class Poupanca : CalculadoraAluguel
     {
-        public double ValorPoupanca { get; set; }
-        public double Juros { get; set; }
-        public double Rendimento { get; set; }
+        public void CalculaRendimento()
+        {
+            Rendimento = (ValorPoupanca * Juros) / 100;
+        }
     }
 }

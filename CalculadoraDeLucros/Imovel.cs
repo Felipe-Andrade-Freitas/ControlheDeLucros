@@ -6,9 +6,7 @@ using System.Threading.Tasks;
 
 namespace CalculadoraDeLucros
 {
-    public class Imovel
+    public class Imovel : CalculadoraAluguel
     {
-        public double ValorCompra { get; set; }
-        public double ValorAluguel { get; set; }
     }
 }
